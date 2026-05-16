@@ -1,6 +1,6 @@
 deployment:
   replicas: "1"
-  changeCause: "Initial deployment of nginx application from 1.29.7"
-  imageVersion: "1.29.7" #we can use latest version
+  changeCause: "Initial deployment of nginx application from 1.29.8"
+  imageVersion: "1.29.8" #we can use latest version
 service:
   type: LoadBalancer
