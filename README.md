@@ -12,4 +12,7 @@ chmod 700 get_helm.sh
 # helm unintall nginx .
 # helm list
 # helm upgrade nginx .
-# helm history nginx 
+# helm history nginx
+# helm upgrade --install nginx .
+# helm upgrade --install nginx -f values-prod.yaml .
+# helm rollback nginx 
