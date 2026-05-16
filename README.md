@@ -12,3 +12,4 @@ chmod 700 get_helm.sh
 # helm unintall nginx .
 # helm list
 # helm upgrade nginx .
+# helm history nginx 
