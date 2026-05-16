@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx: {{ .Values.deployment.imageVersion }}
+        image: "nginx:{{ .Values.deployment.imageVersion }}"
 
 #nslook nginx-headless to see the IPs of the individual pods.
 #kubectl get pods -o wide to see the IPs of the individual pods.
