@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-headless
+spec:
+  #clusterIP: None # This makes the service headless, meaning it won't get a cluster IP and will instead return the 
+  #IPs of the individual pods. 
+  type: {{ .Values.service.type }}
+  selector:
+    #by default the service type is ClusterIP. It exposes the service on a cluster-internal IP.
+    #label are used as a selectors to select the pods which are running nginx.
+    project: roboshop
+    component: frontend
+    environment: dev
+  ports:
+  - protocol: TCP
+    port: 80 # service port
+    targetPort: 80 # container port
